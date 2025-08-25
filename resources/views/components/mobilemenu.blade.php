@@ -14,11 +14,11 @@
 <div id="mobile-menu-overlay" class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition-opacity duration-300 md:hidden"></div>
 
 <!-- Mobile Menu Full Screen -->
-<div id="mobile-menu" class="fixed inset-0 z-50 -translate-y-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
+<div id="mobile-menu" class="fixed inset-0 z-[60] -translate-y-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
     <div class="flex h-full flex-col">
         <!-- Header -->
         <div class="flex items-center justify-between border-b border-white/20 p-6">
-            <div class="text-lg font-semibold text-white">Menü</div>
+            <div class="text-lg font-semibold text-white">Logo</div>
             <button id="mobile-menu-close" class="text-white hover:text-[#ff9000] focus:outline-none">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
