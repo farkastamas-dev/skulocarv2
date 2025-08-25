@@ -1,5 +1,5 @@
 <!-- Mobile Header -->
-<header class="sticky top-0 z-50 flex h-[100px] bg-black/80 backdrop-blur-xl md:hidden">
+<header class="sticky top-0 z-[90] flex h-[100px] bg-black/80 backdrop-blur-xl md:hidden">
     <div class="container mx-auto flex w-full items-center justify-between px-4">
         <div class="text-white">Logo</div>
         <button class="text-white focus:outline-none" id="mobile-menu-button">
@@ -14,7 +14,7 @@
 <div id="mobile-menu-overlay" class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition-opacity duration-300 md:hidden"></div>
 
 <!-- Mobile Menu Full Screen -->
-<div id="mobile-menu" class="fixed inset-0 z-[60] -translate-y-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
+<div id="mobile-menu" class="fixed inset-0 z-[91] -translate-y-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
     <div class="flex h-full flex-col">
         <!-- Header -->
         <div class="flex items-center justify-between border-b border-white/20 p-6">
