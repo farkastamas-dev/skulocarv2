@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50 hidden h-[100px] bg-black/80 backdrop-blur-xl md:flex">
+<header class="sticky top-0 z-[9999] hidden h-[100px] bg-black/80 backdrop-blur-xl md:flex">
     <div class="container mx-auto flex w-full items-center justify-between px-4">
         <div class="text-white">Logo</div>
         <nav class="hidden md:block">
