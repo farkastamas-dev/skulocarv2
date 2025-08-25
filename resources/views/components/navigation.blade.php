@@ -31,7 +31,7 @@
 
     <div id="mobile-menu-overlay" class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition-opacity duration-300 md:hidden"></div>
 
-    <div id="mobile-menu" class="z-200 fixed inset-0 top-0 min-h-screen w-full -translate-x-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
+    <div id="mobile-menu" class="z-200 fixed relative inset-0 top-0 min-h-screen w-full -translate-x-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
         <div class="flex flex-col">
             <div class="flex items-center justify-between border-b border-white/20 p-6">
                 <div class="text-lg font-semibold text-white">Menü</div>
