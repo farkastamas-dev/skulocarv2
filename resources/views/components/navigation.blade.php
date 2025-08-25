@@ -29,10 +29,13 @@
         </div>
     </div>
 
+    <!-- Mobile Menu Overlay -->
     <div id="mobile-menu-overlay" class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition-opacity duration-300 md:hidden"></div>
 
-    <div id="mobile-menu" class="z-200 fixed relative inset-0 top-0 min-h-screen w-full -translate-x-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
-        <div class="flex flex-col">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 -translate-x-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex h-full flex-col">
+            <!-- Header -->
             <div class="flex items-center justify-between border-b border-white/20 p-6">
                 <div class="text-lg font-semibold text-white">Menü</div>
                 <button id="mobile-menu-close" class="text-white hover:text-[#ff9000] focus:outline-none">
@@ -42,30 +45,34 @@
                 </button>
             </div>
 
+            <!-- Menu Items -->
             <nav class="flex-1 overflow-y-auto p-6">
                 <ul class="font-heading space-y-4 text-sm font-medium">
-                    <li><a href="#" class="block py-2 text-white transition-colors hover:text-[#ff9000]">Kezdőlap</a></li>
+                    <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Kezdőlap</a></li>
 
-                    <li class="mobile-menu-item">
-                        <button id="mobile-szerviz-toggle" class="flex w-full items-center justify-between py-2 text-white transition-colors hover:text-[#ff9000]">
+                    <!-- Szervíz with submenu -->
+                    <li>
+                        <button id="mobile-szerviz-toggle" class="flex w-full items-center justify-between py-3 text-white transition-colors hover:text-[#ff9000]">
                             <span>Szervíz</span>
-                            <svg class="h-4 w-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="h-4 w-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <ul id="mobile-szerviz-submenu" class="mt-2 hidden space-y-2 border-l-2 border-[#ff9000]/30 pl-4">
-                            <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Műhely</a></li>
-                            <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Szakszervíz</a></li>
-                            <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Hanggenerátor</a></li>
-                            <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Referenciáink</a></li>
-                        </ul>
+                        <div id="mobile-szerviz-submenu" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <ul class="space-y-2 border-l-2 border-[#ff9000]/30 pl-4 pt-2">
+                                <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Műhely</a></li>
+                                <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Szakszervíz</a></li>
+                                <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Hanggenerátor</a></li>
+                                <li><a href="#" class="block py-2 text-white/80 transition-colors hover:text-[#ff9000]">Referenciáink</a></li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <li><a href="#" class="block py-2 text-white transition-colors hover:text-[#ff9000]">Autókozmetika</a></li>
-                    <li><a href="#" class="block py-2 text-white transition-colors hover:text-[#ff9000]">Alkatrész</a></li>
-                    <li><a href="#" class="block py-2 text-white transition-colors hover:text-[#ff9000]">Felni/Gumi</a></li>
-                    <li><a href="#" class="block py-2 text-white transition-colors hover:text-[#ff9000]">Árajánlat</a></li>
-                    <li><a href="#" class="block py-2 text-white transition-colors hover:text-[#ff9000]">Kapcsolat</a></li>
+                    <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Autókozmetika</a></li>
+                    <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Alkatrész</a></li>
+                    <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Felni/Gumi</a></li>
+                    <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Árajánlat</a></li>
+                    <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Kapcsolat</a></li>
                 </ul>
             </nav>
         </div>
@@ -73,6 +80,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Desktop submenu functionality
             const szervizLink = document.getElementById('szerviz-link');
             const submenu = document.getElementById('szerviz-submenu');
 
@@ -103,6 +111,7 @@
                 }
             });
 
+            // Mobile menu functionality
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenuClose = document.getElementById('mobile-menu-close');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -124,7 +133,8 @@
                 document.body.style.overflow = '';
                 document.body.style.position = '';
                 document.body.style.width = '';
-                mobileSzervizSubmenu.classList.add('hidden');
+                // Close submenu when closing mobile menu
+                mobileSzervizSubmenu.style.maxHeight = '0px';
                 mobileSzervizToggle.querySelector('svg').classList.remove('rotate-180');
             }
 
@@ -132,17 +142,20 @@
             mobileMenuClose.addEventListener('click', closeMobileMenu);
             mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
+            // Mobile submenu toggle with smooth animation
             mobileSzervizToggle.addEventListener('click', function() {
-                const isOpen = !mobileSzervizSubmenu.classList.contains('hidden');
+                const isOpen = mobileSzervizSubmenu.style.maxHeight !== '0px' && mobileSzervizSubmenu.style.maxHeight !== '';
+
                 if (isOpen) {
-                    mobileSzervizSubmenu.classList.add('hidden');
+                    mobileSzervizSubmenu.style.maxHeight = '0px';
                     mobileSzervizToggle.querySelector('svg').classList.remove('rotate-180');
                 } else {
-                    mobileSzervizSubmenu.classList.remove('hidden');
+                    mobileSzervizSubmenu.style.maxHeight = mobileSzervizSubmenu.scrollHeight + 'px';
                     mobileSzervizToggle.querySelector('svg').classList.add('rotate-180');
                 }
             });
 
+            // Close mobile menu on escape key
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape') {
                     closeMobileMenu();
@@ -152,6 +165,7 @@
     </script>
 
     <style>
+        /* Desktop: submenu animáció hoverre */
         @media (min-width: 768px) {
             #szerviz-submenu {
                 opacity: 0;
@@ -170,6 +184,7 @@
             }
         }
 
+        /* Mobil: submenu animáció kattintásra */
         @media (max-width: 767px) {
             #szerviz-submenu {
                 opacity: 0;
