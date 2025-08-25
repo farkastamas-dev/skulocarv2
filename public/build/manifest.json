@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-9mp0eoCc.css",
+    "file": "assets/app-CJAfGTfE.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -18,6 +18,22 @@
   "resources/images/image02.webp": {
     "file": "assets/image02-DnRv_6rO.webp",
     "src": "resources/images/image02.webp"
+  },
+  "resources/images/img01.jpg": {
+    "file": "assets/img01-Dw302jfz.jpg",
+    "src": "resources/images/img01.jpg"
+  },
+  "resources/images/img02.jpg": {
+    "file": "assets/img02-B_mtwCaK.jpg",
+    "src": "resources/images/img02.jpg"
+  },
+  "resources/images/img03.jpg": {
+    "file": "assets/img03-C2aW9zza.jpg",
+    "src": "resources/images/img03.jpg"
+  },
+  "resources/images/img04.jpg": {
+    "file": "assets/img04-dmkQBROc.jpg",
+    "src": "resources/images/img04.jpg"
   },
   "resources/js/app.js": {
     "file": "assets/app-BYXeXxr4.js",
