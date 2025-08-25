@@ -1,5 +1,5 @@
 <x-layouts.welcome>
-    <div class="container mx-auto px-4 py-8">
+    <div class="mx-auto max-w-7xl px-4 py-8">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat esse nulla mollitia, dolore explicabo earum commodi excepturi fugiat inventore! Sed deserunt suscipit reprehenderit eos nemo. Nam facere est facilis dolor?</p>
         <p>Ipsa nam libero ipsum. Earum temporibus adipisci magnam voluptas dolorem, quod laborum rem possimus harum inventore, aut iusto repellendus! Sunt, repellendus? Ullam illum sint ab delectus repellat voluptates enim labore?</p>
         <p>Nisi, est? Culpa omnis iusto quae harum neque ullam, sunt atque eos corporis officia inventore odit natus esse. Fugiat, et aperiam? Sit dignissimos in blanditiis minus aut, numquam consectetur enim.</p>

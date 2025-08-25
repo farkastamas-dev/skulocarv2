@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CfDh3fuN.css",
+    "file": "assets/app-9mp0eoCc.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -10,6 +10,14 @@
   "resources/images/hero01.jpg": {
     "file": "assets/hero01-CON-NPxv.jpg",
     "src": "resources/images/hero01.jpg"
+  },
+  "resources/images/hero02.jpg": {
+    "file": "assets/hero02-2vi_-tLo.jpg",
+    "src": "resources/images/hero02.jpg"
+  },
+  "resources/images/image02.webp": {
+    "file": "assets/image02-DnRv_6rO.webp",
+    "src": "resources/images/image02.webp"
   },
   "resources/js/app.js": {
     "file": "assets/app-BYXeXxr4.js",
