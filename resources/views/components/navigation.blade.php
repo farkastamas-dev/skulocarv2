@@ -33,7 +33,7 @@
     <div id="mobile-menu-overlay" class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition-opacity duration-300 md:hidden"></div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-50 -translate-x-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
+    <div id="mobile-menu" class="fixed inset-0 z-50 h-full w-full -translate-x-full bg-black/95 backdrop-blur-xl transition-transform duration-300 ease-in-out md:hidden">
         <div class="flex h-full flex-col">
             <!-- Header -->
             <div class="flex items-center justify-between border-b border-white/20 p-6">
@@ -46,7 +46,7 @@
             </div>
 
             <!-- Menu Items -->
-            <nav class="flex-1 overflow-y-auto p-6">
+            <nav class="h-full min-h-screen flex-1 bg-black p-6">
                 <ul class="font-heading space-y-4 text-sm font-medium">
                     <li><a href="#" class="block py-3 text-white transition-colors hover:text-[#ff9000]">Kezdőlap</a></li>
 
