@@ -1,0 +1,15 @@
+# .htaccess – Átirányítás egy almappába
+# Cseréld le a 'mappa' szót a kívánt almappanévre
+
+RewriteEngine On
+
+# Belső (láthatatlan) átírás az almappába
+# Kihagyjuk magát az almappát és a létező fájlokat/könyvtárakat
+RewriteCond %{REQUEST_URI} !^/mappa/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /mappa/$1 [L]
+
+# Ha inkább látható (HTTP 301) átirányítást szeretnél, használd ezt helyette:
+# RewriteCond %{REQUEST_URI} !^/mappa/
+# RewriteRule ^(.*)$ /mappa/$1 [L,R=301]
